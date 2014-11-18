@@ -44,12 +44,12 @@ int css_optimizer(int argc,char** argv){
         if(isBalise(lineFile1[i] == 1){
         }
     }
-    if(fopen(argv[arc-1],"r")==NULL){
+    if((cible=fopen(argv[arc-1],"r"))==NULL){
         if(NULL == (cible = fopen(argv[argc-1],"w+")){
             printf("\nErreur: Impossible 'ouvrir le fichier\n");
             return(EXIT_FAILURE);
         }else{
-
+            //fputs("",cible);
         }
     }
 

@@ -1,0 +1,17 @@
+all: css_optimizer
+css_optimizer: css_optimizer.o 
+	gcc $^ -o css_optimizer
+	@echo END
+ 
+clean:
+	rm -f css_optimizer *.o
+ 
+css_optimizer.o: css_optimizer.c
+	gcc -c -Wall -ansi -pedantic $<
+ 
+%.o: %.c %.h
+	gcc -c -Wall -ansi -pedantic $<
+
+man1: 
+	cp css_optimizer.1.gz /usr/share/man/man1
+	mandb
