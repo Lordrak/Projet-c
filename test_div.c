@@ -6,7 +6,6 @@ char** test_div (char** div1, char** div2, int length_d1, int length_d2)
     int i;
     int j;
     short bol = 0;
-    r
     for ( i = 0 ; i < length_d1 , i++)
     {
         for ( j = 0 ; j < length_d2, j++ )
